@@ -55,7 +55,7 @@ def bypass_suspicious_login(browser):
      .perform())
 
     print('Instagram detected an unusual login attempt')
-    print('A security code wast sent to your {}'.format(user_email))
+    print('A security code was sent to your {}'.format(user_email))
     security_code = input('Type the security code here: ')
 
     security_code_field = browser.find_element_by_xpath((
@@ -133,7 +133,7 @@ def login_user(browser,
     # Might cause problems if the OS language is english
     if switch_language:
         browser.find_element_by_xpath(
-          "//select[@class='_fsoey']/option[text()='English']").click()
+          "//select[@class='hztqj']/option[text()='English']").click()
 
     # Check if the first div is 'Create an Account' or 'Log In'
     login_elem = browser.find_element_by_xpath(
@@ -144,6 +144,7 @@ def login_user(browser,
     # Enter username and password and logs the user in
     # Sometimes the element name isn't 'Username' and 'Password'
     # (valid for placeholder too)
+    sleep(2) 
     input_username = browser.find_elements_by_xpath(
         "//input[@name='username']")
 
