@@ -1427,5 +1427,5 @@ session.set_simulation(enabled=True, percentage=66)
 
 
 ---
-###### Have Fun & Feel Free to report any issues
+###### Have Fun & Feel Free to report any issues. Thank You!
 ---
